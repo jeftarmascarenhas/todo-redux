@@ -1,7 +1,5 @@
 import React from 'react'
 
-let teste
-
 function Todo () {
   return (
     <div>

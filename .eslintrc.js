@@ -2,39 +2,40 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    node: true,
+    node: true
   },
-  extends: 'airbnb',
+  extends: "airbnb",
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module"
   },
-  plugins: ['react'],
+  plugins: ["react"],
   rules: {
-    semi: ['error', 'never'],
-    'react/jsx-filename-extension': [
-      'error',
+    semi: ["error", "never"],
+    "react/jsx-filename-extension": [
+      "error",
       {
-        extensions: ['.js', '.jsx'],
-      },
+        extensions: [".js", ".jsx"]
+      }
     ],
-    'global-require': 'off',
-    'no-console': 'off',
-    'import/prefer-default-export': 'off',
-    'import/no-unresolved': 0,
-    'no-unused-vars': [
-      'error',
+    "global-require": "off",
+    "no-console": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": 0,
+    "no-unused-vars": [
+      "error",
       {
-        argsIgnorePattern: '^_',
-      },
+        argsIgnorePattern: "^_"
+      }
     ],
-    'space-before-function-paren': ['error', 'always'],
-  },
-}
+    "space-before-function-paren": ["error", "always"],
+    "no-use-before-define": 0,
+  }
+};
