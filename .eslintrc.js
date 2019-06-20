@@ -36,6 +36,6 @@ module.exports = {
       }
     ],
     "space-before-function-paren": ["error", "always"],
-    "no-use-before-define": 0,
+    "no-use-before-define": 0
   }
 };
