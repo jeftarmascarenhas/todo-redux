@@ -7,7 +7,7 @@ import { addTodo, completedTodo } from '../../redux/actions/todos'
 
 let nextID = 0
 
-class Todo extends Component {
+class Todos extends Component {
   state = {
     text: '',
   }
@@ -66,9 +66,9 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators({ addTodo: addTodo, completedTodo: completedTodo }, dispatch)
 }
 
-Todo.defaultProps = {}
+Todos.defaultProps = {}
 
-Todo.propTypes = {
+Todos.propTypes = {
   todos: PropTypes.array.isRequired,
   addTodo: PropTypes.func.isRequired,
   completedTodo: PropTypes.func.isRequired,
@@ -77,4 +77,4 @@ Todo.propTypes = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Todo)
+)(Todos)
